@@ -1,8 +1,16 @@
-var newText = 'new Text'
-document.getElementById('ok').innerHTML = newText
-var myName = 'Nattaphat'
-document.getElementById('no').innerHTML = myName
+document.getElementById('ok').addEventListener('click', function(e){
+    alert('ok is clicked')
+    
+}
+)
 
-function myFunction() {
-    alert("Hello\nHow are you?");
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coor = "X coords: " + x + ", Y coords: " + y;
+
+    console.log(coor)
+  }
+function clearCoor() {
+    var coor = "X coords: " + 0 + ", Y coords: " + 0;
   }
